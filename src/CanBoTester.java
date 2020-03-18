@@ -53,8 +53,8 @@ else if (act == 2)
 {
 System.out.println("Nhap Ho Ten: ");
 String hoTen = scan.nextLine();
-CanBo b = l.timHoTen(hoTen);
-System.out.println("Ho Ten: "+ b.getHoTen() +"\nTuoi: " + b.getTuoi() + "\nGioi Tinh: " + b.getGioiTinh() + "\nDia Chi: " + b.getDiaChi());
+l.timHoTen(hoTen);
+
 }
 
 else if (act == 3){
@@ -68,15 +68,21 @@ l.exit();
 
 }while (act!=4);
 }
-private static int checkInput(int a, int b){
-      Scanner scan = new Scanner (System.in);
-      int choice = scan.nextInt();
-   
-      while (choice<a || choice>b){
-         System.out.println("Du lieu nhap khong phu hop voi yeu cau. Vui long nhap lai:");
-         choice = scan.nextInt();
-      }
-   
-      return choice;
-   }
+    private static int checkInput(int a, int b){
+        Scanner scan = new Scanner (System.in);
+        try {
+            int choice = scan.nextInt();
+
+            while (choice < a || choice > b) {
+                System.out.println("Du lieu nhap khong phu hop voi yeu cau. Vui long nhap lai:");
+                choice = scan.nextInt();
+            }
+
+
+            return choice;
+        } catch (Exception e) {
+            System.out.println("Du lieu nhap khong phu hop voi yeu cau. Vui long nhap lai:");
+            return checkInput(a, b);
+        }
+    }
 }
