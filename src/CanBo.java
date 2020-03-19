@@ -1,30 +1,30 @@
-public class CanBo extends LopCanBo{
-private String hoTen;
-private int tuoi;
-private char gioiTinh;
-private String diaChi;
+public class CanBo {
+    private String hoTen;
+    private int tuoi;
+    private char gioiTinh;
+    private String diaChi;
 
-public CanBo(String h, int t, char g, String d){
-hoTen =h;
-tuoi = t;
-gioiTinh = g;
-diaChi = d;
-}
+    public CanBo(String h, int t, char g, String d) {
+        hoTen = h;
+        tuoi = t;
+        gioiTinh = g;
+        diaChi = d;
+    }
 
-public String getHoTen(){
-return hoTen;
-}
+    public String getHoTen() {
+        return hoTen;
+    }
 
-public int getTuoi(){
-return tuoi;
-}
+    public int getTuoi() {
+        return tuoi;
+    }
 
-public char getGioiTinh(){
-return gioiTinh;
-}
+    public char getGioiTinh() {
+        return gioiTinh;
+    }
 
-public String getDiaChi(){
-return diaChi;
-}
+    public String getDiaChi() {
+        return diaChi;
+    }
 
 }
