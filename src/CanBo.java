@@ -1,4 +1,6 @@
-public class CanBo {
+import java.io.Serializable;
+
+public class CanBo implements Serializable {
     private String hoTen;
     private int tuoi;
     private char gioiTinh;
@@ -27,4 +29,8 @@ public class CanBo {
         return diaChi;
     }
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

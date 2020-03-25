@@ -1,4 +1,6 @@
-public class NhanVien extends CanBo{
+import java.io.Serializable;
+
+public class NhanVien extends CanBo implements Serializable {
 private String congViec;
 public NhanVien(String ten, int tuoi, char gioiTinh, String diaChi, String c){
 super(ten, tuoi, gioiTinh, diaChi);

@@ -7,7 +7,7 @@ public class CanBoTester {
 
         int act;
         do {
-            System.out.println("Chon thao tac: \n1. Them moi can bo\n2. Tim kiem \n3. Hien thi thong tin \n4. Thoat");
+            System.out.println("\nChon thao tac: \n1. Them moi can bo\n2. Tim kiem \n3. Hien thi thong tin \n4. Thoat");
             act = checkInput(1, 4);
             if (act == 1) {
                 System.out.print("Nhap ho ten: ");
