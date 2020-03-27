@@ -1,30 +1,36 @@
-public class CanBo extends LopCanBo{
-private String hoTen;
-private int tuoi;
-private char gioiTinh;
-private String diaChi;
+import java.io.Serializable;
 
-public CanBo(String h, int t, char g, String d){
-hoTen =h;
-tuoi = t;
-gioiTinh = g;
-diaChi = d;
-}
+public class CanBo implements Serializable {
+    private String hoTen;
+    private int tuoi;
+    private char gioiTinh;
+    private String diaChi;
 
-public String getHoTen(){
-return hoTen;
-}
+    public CanBo(String h, int t, char g, String d) {
+        hoTen = h;
+        tuoi = t;
+        gioiTinh = g;
+        diaChi = d;
+    }
 
-public int getTuoi(){
-return tuoi;
-}
+    public String getHoTen() {
+        return hoTen;
+    }
 
-public char getGioiTinh(){
-return gioiTinh;
-}
+    public int getTuoi() {
+        return tuoi;
+    }
 
-public String getDiaChi(){
-return diaChi;
-}
+    public char getGioiTinh() {
+        return gioiTinh;
+    }
 
+    public String getDiaChi() {
+        return diaChi;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
